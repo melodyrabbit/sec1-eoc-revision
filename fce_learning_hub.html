@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secondary 1 FCE Self-Directed Learning Hub</title>
     
-    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Load FontAwesome for Icons -->
@@ -53,7 +52,7 @@
         .flip-card-front, .flip-card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; padding: 1rem; border-radius: 0.75rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
         .flip-card-front { background-color: white; border: 2px solid #e2e8f0; }
         .flip-card-back { transform: rotateY(180deg); color: white; }
-        .flip-m4 .flip-card-back { background-color: #3b82f6; } /* Linked to Money Management (now m4) */
+        .flip-m4 .flip-card-back { background-color: #3b82f6; }
 
         /* Print styles */
         @media print {
@@ -197,43 +196,20 @@
                                 <ul class="list-disc pl-5 space-y-2 text-sm">
                                     <li>Include the <strong>strengths</strong> that you have indicated in your Applied Module.</li>
                                     <li>Include the <strong>weaknesses</strong> that you have indicated in your Applied Module.</li>
-                                    <li><comment-tag id="1">You are allowed to use any AI platform to create it (e.g., Canva, Adobe Express).</comment-tag id="1" text="You are allowed to use any AI platform to create it. (E.g. The Savvy Plate at FCE Microsite, ChatGPT)" type="suggestion"></li>
+                                    <li>You are allowed to use any AI platform to create it (e.g., Canva, Adobe Express).</li>
                                 </ul>
                             </div>
                             
                             <div class="bg-blue-50 p-4 rounded-lg border border-blue-200 shadow-sm mt-4">
                                 <h4 class="font-bold text-sm mb-2 text-blue-800"><i class="fa-solid fa-robot mr-2"></i>Suggested AI Prompt:</h4>
                                 <p class="text-sm italic text-gray-700 bg-white p-3 rounded border border-gray-200">
-                                    "I am a Secondary One Food and Consumer student. Create a poster showing the sensory evaluation of the stir-fried noodles that I have cooked for my practical examination in terms of appearance, taste and texture for my Applied Module. The ingredients used are: yellow noodles, chicken, capsicum. For appearance, the strength [fill in your strengths based on your Applied Module]. The weakness is [fill in your weaknesses based on your Applied Module]. For taste, the strength [fill in your strengths based on your Applied Module]. The weakness is [fill in your weaknesses based on your Applied Module]. For texture, the strength [fill in your strengths based on your Applied Module]. The weakness is [fill in your weaknesses based on your Applied Module]. You are to check the poster generated and ensure that the information is accurate and inline with what you have written in your Applied Module. Attached are two sample posters for your reference. Do not copy them."
+                                    "I am a Secondary One Food and Consumer student. Create a poster showing the sensory evaluation of the stir-fried noodles that I have cooked for my practical examination in terms of appearance, taste and texture for my Applied Module..."
                                 </p>
-                                <p class="text-xs text-blue-600 mt-2 font-medium">Important: Check the generated poster and ensure the information is accurate and matches your Applied Module exactly!</p>
                             </div>
-                            
-                            <div class="bg-gray-100 p-4 rounded-lg border border-gray-200 shadow-sm mt-4">
-                                <h4 class="font-bold text-sm mb-3 text-gray-800"><i class="fa-solid fa-image mr-2"></i>Reference Materials:</h4>
-                                <p class="text-sm text-gray-700 mb-2">Please refer to the following sample posters to understand the expected layout and level of detail. <strong>Do not copy them.</strong></p>
-                                <ul class="list-disc pl-5 space-y-1 text-sm text-gray-600">
-                                    <li><span class="font-semibold text-gray-800">SE 1 sample.jpg</span></li>
-                                    <li><span class="font-semibold text-gray-800">SE 2 sample.jpg</span></li>
-                                </ul>
-                            </div>
-                            
-                            <p class="text-sm mt-4">Detailed instructions and the sample files are available in Google Classroom.</p>
                         </div>
                     </div>
 
-                    <div class="flex flex-col md:flex-row gap-4 items-center justify-center bg-blue-50 p-6 rounded-xl border border-blue-100">
-                        <div class="text-center md:text-left">
-                            <p class="font-bold text-blue-800 mb-1">Submit Your Work Here</p>
-                            <p class="text-sm text-blue-600">You are to submit your final poster in Google Classroom.</p>
-                        </div>
-                        <a href="https://classroom.google.com/w/ODYxMzMxNTIzMjI4/t/all" target="_blank" class="shrink-0 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg shadow transition-colors inline-flex items-center">
-                            Go to Google Classroom <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-sm"></i>
-                        </a>
-                    </div>
-                    
                     <div class="mt-8 text-center border-t pt-6">
-                        <p class="mb-4 text-gray-600 text-sm">Click below once you have understood the instructions and visited Google Classroom.</p>
                         <button onclick="markModuleComplete(1)" id="submit-m1" class="bg-m1-500 hover:bg-m1-600 text-white font-bold py-2 px-6 rounded-lg shadow transition">
                             Mark as Acknowledged
                         </button>
@@ -241,7 +217,7 @@
                 </div>
             </section>
 
-            <!-- MODULE 2: FOOD SAFETY (Previously Mod 3) -->
+            <!-- MODULE 2: FOOD SAFETY -->
             <section id="module-2" class="module-content fade-in hidden">
                 <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border-t-4 border-m2-500 mb-8">
                     <div class="flex items-center gap-4 mb-6">
@@ -254,74 +230,6 @@
                         </div>
                     </div>
 
-                    <!-- Info Cards -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                        <div class="bg-amber-50 rounded-xl p-5 border border-amber-200">
-                            <h3 class="font-bold text-m2-800 text-lg mb-3 border-b border-amber-200 pb-2"><i class="fa-solid fa-thermometer-half mr-2"></i>Temperature Rules</h3>
-                            <ul class="space-y-3 text-sm text-amber-900">
-                                <li><span class="font-bold text-red-600 bg-red-100 px-2 py-0.5 rounded">5°C to 60°C</span> <strong>Temperature Danger Zone:</strong> Bacteria multiply rapidly.</li>
-                                <li><span class="font-bold bg-white px-2 py-0.5 rounded shadow-sm border">< 5°C</span> <strong>Storage:</strong> Keep raw meat on bottom shelf of chiller so juices don't drip.</li>
-                                <li><span class="font-bold bg-white px-2 py-0.5 rounded shadow-sm border">74°C</span> <strong>Cooking:</strong> Internal temp required for poultry.</li>
-                                <li><span class="font-bold bg-white px-2 py-0.5 rounded shadow-sm border">75°C</span> <strong>Reheating:</strong> Leftovers must reach this temp for 2 mins.</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
-                            <h3 class="font-bold text-slate-800 text-lg mb-3 border-b border-slate-200 pb-2"><i class="fa-solid fa-bug mr-2"></i>Contamination Types</h3>
-                            <div class="space-y-4">
-                                <div class="flex gap-3">
-                                    <div class="w-8 h-8 rounded bg-gray-200 flex-shrink-0 flex items-center justify-center"><i class="fa-solid fa-gem text-gray-500"></i></div>
-                                    <div><p class="font-bold text-sm">Physical</p><p class="text-xs text-gray-600">Hair, glass, staples in food.</p></div>
-                                </div>
-                                <div class="flex gap-3">
-                                    <div class="w-8 h-8 rounded bg-green-200 flex-shrink-0 flex items-center justify-center"><i class="fa-solid fa-flask text-green-700"></i></div>
-                                    <div><p class="font-bold text-sm">Chemical</p><p class="text-xs text-gray-600">Bleach, insecticides mixing with food.</p></div>
-                                </div>
-                                <div class="flex gap-3">
-                                    <div class="w-8 h-8 rounded bg-red-200 flex-shrink-0 flex items-center justify-center"><i class="fa-solid fa-virus text-red-700"></i></div>
-                                    <div><p class="font-bold text-sm">Microbial</p><p class="text-xs text-gray-600">Bacteria (grows at 37°C), Yeasts (spoilage), Moulds (mycotoxins).</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Kitchen Safety Interactive Rules -->
-                    <h3 class="font-bold text-gray-800 text-lg mb-4">Lab Safety Audit</h3>
-                    <div class="bg-gray-800 rounded-xl p-4 text-white mb-8 shadow-inner">
-                        <p class="text-sm mb-3 text-gray-300">Hover/Click on the hazards to reveal safe practices:</p>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
-                            <div class="relative group cursor-pointer border border-gray-600 rounded bg-gray-700 p-3 text-center hover:bg-gray-600 transition">
-                                <i class="fa-solid fa-fire text-2xl text-orange-400 mb-2"></i>
-                                <p class="text-xs font-bold">Fires/Scalds</p>
-                                <div class="absolute inset-0 bg-m2-500 text-white p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[10px] leading-tight">
-                                    Ensure utensils are dry before frying to prevent oil splatter.
-                                </div>
-                            </div>
-                            <div class="relative group cursor-pointer border border-gray-600 rounded bg-gray-700 p-3 text-center hover:bg-gray-600 transition">
-                                <i class="fa-solid fa-knife text-2xl text-gray-300 mb-2"></i>
-                                <p class="text-xs font-bold">Cuts</p>
-                                <div class="absolute inset-0 bg-m2-500 text-white p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[10px] leading-tight">
-                                    NEVER place knives into the wash basin. Wash them separately.
-                                </div>
-                            </div>
-                            <div class="relative group cursor-pointer border border-gray-600 rounded bg-gray-700 p-3 text-center hover:bg-gray-600 transition">
-                                <i class="fa-solid fa-person-falling text-2xl text-blue-300 mb-2"></i>
-                                <p class="text-xs font-bold">Slips</p>
-                                <div class="absolute inset-0 bg-m2-500 text-white p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[10px] leading-tight">
-                                    Wipe up spills immediately. Close all cabinet doors.
-                                </div>
-                            </div>
-                            <div class="relative group cursor-pointer border border-gray-600 rounded bg-gray-700 p-3 text-center hover:bg-gray-600 transition">
-                                <i class="fa-solid fa-stopwatch text-2xl text-green-300 mb-2"></i>
-                                <p class="text-xs font-bold">Unattended</p>
-                                <div class="absolute inset-0 bg-m2-500 text-white p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[10px] leading-tight">
-                                    Always use a timer. Keep paper towels away from open flames.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quiz Section -->
                     <div class="border-t pt-8">
                         <div class="flex justify-between items-center mb-6">
                             <h3 class="font-bold text-gray-800 text-xl"><i class="fa-solid fa-list-check text-m2-500 mr-2"></i>Knowledge Check</h3>
@@ -332,7 +240,7 @@
                 </div>
             </section>
 
-            <!-- MODULE 3: NUTRITION & HEALTH (Previously Mod 2) -->
+            <!-- MODULE 3: NUTRITION & HEALTH -->
             <section id="module-3" class="module-content fade-in hidden">
                 <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border-t-4 border-m3-500 mb-8">
                     <div class="flex items-center gap-4 mb-6">
@@ -345,74 +253,6 @@
                         </div>
                     </div>
 
-                    <!-- Visual Aid: My Healthy Plate -->
-                    <div class="bg-m3-50 rounded-xl p-6 mb-8 border border-m3-100">
-                        <h3 class="font-bold text-m3-800 text-center mb-4">My Healthy Plate Proportions</h3>
-                        
-                        <!-- SVG representation of My Healthy Plate -->
-                        <div class="flex justify-center mb-6">
-                            <svg width="280" height="280" viewBox="0 0 280 280" class="drop-shadow-xl">
-                                <circle cx="140" cy="140" r="135" fill="white" />
-                                
-                                <!-- Right Half: Fruit & Veg -->
-                                <path d="M 140 5 A 135 135 0 0 1 140 275 L 140 140 Z" fill="#4ade80" stroke="white" stroke-width="4"/>
-                                
-                                <!-- Top Left Quarter: Brown rice & wholemeal bread -->
-                                <path d="M 140 140 L 140 5 A 135 135 0 0 0 5 140 Z" fill="#fde047" stroke="white" stroke-width="4"/>
-                                
-                                <!-- Bottom Left Quarter: Meat & others -->
-                                <path d="M 140 140 L 5 140 A 135 135 0 0 0 140 275 Z" fill="#fca5a5" stroke="white" stroke-width="4"/>
-                                
-                                <!-- Text Labels -->
-                                <!-- Fruit & Veg Text (Now on Right) -->
-                                <text x="210" y="130" font-family="Inter, sans-serif" font-weight="bold" font-size="20" fill="white" text-anchor="middle">Fruit</text>
-                                <text x="210" y="155" font-family="Inter, sans-serif" font-weight="bold" font-size="20" fill="white" text-anchor="middle">& Veg</text>
-                                <text x="210" y="180" font-family="Inter, sans-serif" font-size="14" fill="white" text-anchor="middle">(2+2 Guideline)</text>
-
-                                <!-- Brown Rice & Wholemeal Bread Text (Now on Left) -->
-                                <text x="75" y="65" font-family="Inter, sans-serif" font-weight="bold" font-size="14" fill="#78350f" text-anchor="middle">Brown rice &</text>
-                                <text x="75" y="85" font-family="Inter, sans-serif" font-weight="bold" font-size="14" fill="#78350f" text-anchor="middle">wholemeal</text>
-                                <text x="75" y="105" font-family="Inter, sans-serif" font-weight="bold" font-size="14" fill="#78350f" text-anchor="middle">bread</text>
-
-                                <!-- Meat & Others Text (Now on Left) -->
-                                <text x="75" y="200" font-family="Inter, sans-serif" font-weight="bold" font-size="16" fill="#7f1d1d" text-anchor="middle">Meat</text>
-                                <text x="75" y="220" font-family="Inter, sans-serif" font-weight="bold" font-size="16" fill="#7f1d1d" text-anchor="middle">& others</text>
-                            </svg>
-                        </div>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 text-sm text-center">
-                            <div class="bg-white p-3 rounded shadow-sm">
-                                <i class="fa-solid fa-droplet text-blue-500 mb-1"></i><br>
-                                <strong>8-10 glasses</strong> of plain water daily
-                            </div>
-                            <div class="bg-white p-3 rounded shadow-sm">
-                                <i class="fa-solid fa-person-running text-orange-500 mb-1"></i><br>
-                                <strong>60 mins</strong> physical activity daily
-                            </div>
-                            <div class="bg-white p-3 rounded shadow-sm">
-                                <i class="fa-solid fa-bottle-droplet text-yellow-500 mb-1"></i><br>
-                                Use <strong>healthier oils</strong> (e.g., sunflower)
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Diet Related Diseases Table -->
-                    <h3 class="font-bold text-gray-800 text-lg mb-4">Diet-Related Diseases Summary</h3>
-                    <div class="overflow-x-auto mb-8 bg-white border rounded-lg shadow-sm">
-                        <table class="w-full text-sm text-left text-gray-500">
-                            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
-                                <tr><th class="px-4 py-3">Disease</th><th class="px-4 py-3">Cause / Risk Factor</th><th class="px-4 py-3">Prevention</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border-b"><td class="px-4 py-3 font-medium text-gray-900">Obesity</td><td class="px-4 py-3">Energy Input > Output (BMI ≥ 27.5)</td><td class="px-4 py-3">Balance calories, exercise.</td></tr>
-                                <tr class="border-b"><td class="px-4 py-3 font-medium text-gray-900">Type 2 Diabetes</td><td class="px-4 py-3">Poor blood sugar control</td><td class="px-4 py-3">Eat wholegrains (releases sugar slowly).</td></tr>
-                                <tr class="border-b"><td class="px-4 py-3 font-medium text-gray-900">Hypertension (High Blood Pressure)</td><td class="px-4 py-3">High sodium / salt intake</td><td class="px-4 py-3">Eat less processed/preserved foods.</td></tr>
-                                <tr><td class="px-4 py-3 font-medium text-gray-900">Coronary Heart Disease</td><td class="px-4 py-3">High cholesterol blocking arteries</td><td class="px-4 py-3">Use healthier oils, reduce high-fat foods.</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <!-- Quiz Section -->
                     <div class="border-t pt-8">
                         <div class="flex justify-between items-center mb-6">
                             <h3 class="font-bold text-gray-800 text-xl"><i class="fa-solid fa-list-check text-m3-500 mr-2"></i>Knowledge Check</h3>
@@ -423,7 +263,7 @@
                 </div>
             </section>
             
-            <!-- MODULE 4: SMART MONEY MANAGEMENT (Previously Mod 1) -->
+            <!-- MODULE 4: SMART MONEY MANAGEMENT -->
             <section id="module-4" class="module-content fade-in hidden">
                 <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border-t-4 border-m4-500 mb-8">
                     <div class="flex items-center gap-4 mb-6">
@@ -436,58 +276,6 @@
                         </div>
                     </div>
 
-                    <!-- Interactive Concept Cards -->
-                    <h3 class="font-bold text-gray-800 text-lg mb-4">Key Concepts (Click to reveal)</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 flip-m4">
-                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front"><h4 class="font-bold text-lg text-m4-800">Need vs. Want</h4></div>
-                                <div class="flip-card-back p-4 text-sm flex flex-col justify-center">
-                                    <p><strong>Need:</strong> Necessary for survival (e.g., clean water, basic clothing).</p>
-                                    <p class="mt-2"><strong>Want:</strong> Desirable but not essential (e.g., latest phone, branded shoes).</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front"><h4 class="font-bold text-lg text-m4-800">50/30/20 Rule</h4></div>
-                                <div class="flip-card-back p-4 text-sm flex flex-col justify-center">
-                                    <p>A budgeting guide to divide your income:</p>
-                                    <ul class="text-left list-disc pl-5 mt-2">
-                                        <li><strong>50%</strong> Needs (Essentials)</li>
-                                        <li><strong>30%</strong> Wants (Extras)</li>
-                                        <li><strong>20%</strong> Savings (Future)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front"><h4 class="font-bold text-lg text-m4-800">4 Decision Questions</h4></div>
-                                <div class="flip-card-back p-3 text-xs flex flex-col justify-center text-left">
-                                    <p>Before buying, ask:</p>
-                                    <ol class="list-decimal pl-4 mt-1 space-y-1">
-                                        <li>Do I already have the item?</li>
-                                        <li>Can I find something cheaper?</li>
-                                        <li>Am I buying it because it's branded?</li>
-                                        <li>Will I be able to live without it?</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front"><h4 class="font-bold text-lg text-m4-800">Payment Modes</h4></div>
-                                <div class="flip-card-back p-3 text-xs flex flex-col justify-center text-left space-y-1">
-                                    <p><strong>Cash:</strong> Widely accepted, easy to budget, but can be lost.</p>
-                                    <p><strong>Debit Card:</strong> Deducts directly from bank account.</p>
-                                    <p><strong>Credit Card:</strong> Buy now, pay later. Risk of high interest & debt.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quiz Section -->
                     <div class="border-t pt-8">
                         <div class="flex justify-between items-center mb-6">
                             <h3 class="font-bold text-gray-800 text-xl"><i class="fa-solid fa-list-check text-m4-500 mr-2"></i>Knowledge Check</h3>
@@ -498,7 +286,7 @@
                 </div>
             </section>
 
-            <!-- MODULE 5: DISCERNING CONSUMER (Previously Mod 4) -->
+            <!-- MODULE 5: DISCERNING CONSUMER -->
             <section id="module-5" class="module-content fade-in hidden">
                 <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border-t-4 border-m5-500 mb-8">
                     <div class="flex items-center gap-4 mb-6">
@@ -511,54 +299,6 @@
                         </div>
                     </div>
 
-                    <!-- Definition & Shopping Modes -->
-                    <div class="bg-m5-50 rounded-xl p-5 mb-8 border border-m5-100">
-                        <p class="mb-4 text-sm text-m5-900"><strong class="text-m5-800 text-base">A Discerning Consumer</strong> shows good judgement when making a purchase. They research, budget, and avoid impulse buying.</p>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-                                <h4 class="font-bold text-gray-800 flex items-center border-b pb-2 mb-2"><i class="fa-solid fa-store mr-2 text-blue-500"></i>In-Store Shopping</h4>
-                                <ul class="text-xs space-y-1 text-gray-600 list-disc pl-4">
-                                    <li class="text-green-600"><span class="text-gray-600">Pro: Try on items, see actual product.</span></li>
-                                    <li class="text-green-600"><span class="text-gray-600">Pro: Immediate takeaway.</span></li>
-                                    <li class="text-red-500"><span class="text-gray-600">Con: Crowds, long queues.</span></li>
-                                    <li class="text-red-500"><span class="text-gray-600">Con: Restricted by opening hours.</span></li>
-                                </ul>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-                                <h4 class="font-bold text-gray-800 flex items-center border-b pb-2 mb-2"><i class="fa-solid fa-mobile-screen mr-2 text-purple-500"></i>Online Shopping</h4>
-                                <ul class="text-xs space-y-1 text-gray-600 list-disc pl-4">
-                                    <li class="text-green-600"><span class="text-gray-600">Pro: Large variety, shop 24/7.</span></li>
-                                    <li class="text-green-600"><span class="text-gray-600">Pro: Easy price comparison.</span></li>
-                                    <li class="text-red-500"><span class="text-gray-600">Con: Cannot try before buying.</span></li>
-                                    <li class="text-red-500"><span class="text-gray-600">Con: Delivery wait times & shipping fees.</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Consumer Rights & Lemon Law -->
-                    <h3 class="font-bold text-gray-800 text-lg mb-4">Consumer Rights & Protection</h3>
-                    <div class="bg-slate-800 text-white rounded-xl overflow-hidden mb-8 shadow-md">
-                        <div class="p-4 bg-slate-900 border-b border-slate-700 flex items-center justify-between">
-                            <h4 class="font-bold text-m5-400">The Lemon Law</h4>
-                            <i class="fa-solid fa-gavel text-gray-400"></i>
-                        </div>
-                        <div class="p-5 text-sm">
-                            <p class="mb-3 text-gray-300">Protects consumers against defective goods. You can request repair, replacement, price reduction, or refund.</p>
-                            <div class="bg-slate-700 p-3 rounded text-xs">
-                                <span class="font-bold text-red-300">EXCEPTIONS (When it does NOT apply):</span>
-                                <ul class="list-disc pl-5 mt-1 text-gray-300 space-y-1">
-                                    <li>Normal wear and tear.</li>
-                                    <li>Consumer misused the item.</li>
-                                    <li>Consumer tried to repair it themselves.</li>
-                                    <li><strong>Change of mind</strong> (you simply don't like it anymore).</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quiz Section -->
                     <div class="border-t pt-8">
                         <div class="flex justify-between items-center mb-6">
                             <h3 class="font-bold text-gray-800 text-xl"><i class="fa-solid fa-list-check text-m5-500 mr-2"></i>Knowledge Check</h3>
@@ -587,9 +327,7 @@
                         <div class="flex">
                             <div class="flex-shrink-0"><i class="fa-solid fa-circle-exclamation text-yellow-400"></i></div>
                             <div class="ml-3">
-                                <p class="text-sm text-yellow-700">
-                                    You should complete Modules 1-5 before taking the Master Quiz.
-                                </p>
+                                <p class="text-sm text-yellow-700">You should complete Modules 1-5 before taking the Master Quiz.</p>
                             </div>
                         </div>
                     </div>
@@ -597,23 +335,27 @@
                     <!-- Reflection Box -->
                     <div class="mb-8">
                         <h3 class="font-bold text-gray-800 text-lg mb-3">Personal Reflection</h3>
-                        <p class="text-sm text-gray-600 mb-3">How will you apply what you've learned about budgeting and food safety at home?</p>
-                        <textarea id="student-reflection" rows="4" class="w-full border border-gray-300 rounded-lg p-3 text-sm focus:ring-2 focus:ring-m6-500 focus:border-m6-500 outline-none transition-all" placeholder="Type your reflection here... This will be saved automatically."></textarea>
+                        <textarea id="student-reflection" rows="4" class="w-full border border-gray-300 rounded-lg p-3 text-sm focus:ring-2 focus:ring-m6-500 focus:border-m6-500 outline-none transition-all" placeholder="Type your reflection here..."></textarea>
                     </div>
 
                     <!-- Master Quiz Section -->
                     <div class="border-t pt-8">
                         <div class="flex justify-between items-center mb-6">
-                            <h3 class="font-bold text-gray-800 text-xl"><i class="fa-solid fa-star text-m6-500 mr-2"></i>Master Assessment (14 Qns)</h3>
+                            <h3 class="font-bold text-gray-800 text-xl"><i class="fa-solid fa-star text-m6-500 mr-2"></i>Master Assessment (12 Qns)</h3>
                             <span id="score-badge-6" class="hidden bg-m6-100 text-m6-800 px-3 py-1 rounded-full text-sm font-bold border border-m6-200"></span>
                         </div>
                         
                         <div id="master-quiz-start" class="text-center bg-slate-50 p-8 rounded-xl border border-slate-200 no-print">
                             <i class="fa-solid fa-graduation-cap text-5xl text-slate-300 mb-4"></i>
-                            <p class="mb-4 text-gray-600">This master quiz consists of 14 real-world scenario questions testing your application of concepts from all modules. Are you ready?</p>
-                            <button onclick="startMasterQuiz()" class="bg-m6-500 hover:bg-m6-600 text-white font-bold py-3 px-8 rounded-lg shadow transition-colors">
-                                Start Master Quiz
-                            </button>
+                            <p class="mb-4 text-gray-600">This master quiz consists of 12 real-world scenario questions testing your application of concepts from all modules.</p>
+                            <div class="flex justify-center gap-4 flex-wrap">
+                                <button onclick="startMasterQuiz()" class="bg-m6-500 hover:bg-m6-600 text-white font-bold py-3 px-8 rounded-lg shadow transition-colors">
+                                    Start Master Quiz
+                                </button>
+                                <button onclick="openQuestionsModal()" class="bg-white hover:bg-gray-100 text-slate-700 font-bold py-3 px-6 rounded-lg shadow border border-gray-300 transition-colors">
+                                    <i class="fa-solid fa-eye mr-2"></i> Preview All Questions
+                                </button>
+                            </div>
                         </div>
                         
                         <div id="quiz-container-6" class="space-y-6 hidden no-print"></div>
@@ -621,16 +363,12 @@
                         <!-- Print Summary Section -->
                         <div id="summary-section" class="mt-8 pt-8 border-t hidden text-center">
                             <h3 class="font-bold text-green-600 text-xl mb-2"><i class="fa-solid fa-trophy mr-2"></i>All Completed!</h3>
-                            <p class="text-gray-600 mb-6">You have completed the core FCE Learning Hub. Generate your summary for submission.</p>
-                            
-                            <!-- Display for print -->
                             <div class="print-only text-left mb-8">
                                 <h4 class="font-bold border-b pb-1 mb-2">Scores:</h4>
                                 <ul id="print-scores" class="mb-4"></ul>
                                 <h4 class="font-bold border-b pb-1 mb-2">Reflection:</h4>
                                 <p id="print-reflection" class="italic"></p>
                             </div>
-
                             <button onclick="preparePrint()" class="no-print bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 px-8 rounded-lg shadow transition-colors inline-flex items-center">
                                 <i class="fa-solid fa-print mr-2"></i> Print / Save Summary
                             </button>
@@ -651,20 +389,7 @@
                             <p class="text-gray-500">Apply your money management skills.</p>
                         </div>
                     </div>
-
-                    <!-- SLS Integration -->
-                    <div class="bg-slate-50 rounded-xl p-8 border border-slate-200 text-center">
-                        <i class="fa-solid fa-dragon text-5xl text-m7-500 mb-4"></i>
-                        <h3 class="font-bold text-gray-800 text-xl mb-2">Play "Monster of the Debt"</h3>
-                        <p class="text-gray-600 mb-6 max-w-md mx-auto">Head over to the Student Learning Space (SLS) and play this interactive game to test your budgeting and savings skills against the debt monsters!</p>
-                        
-                        <a href="https://vle.learning.moe.edu.sg/" target="_blank" class="bg-m7-500 hover:bg-m7-600 text-white font-bold py-3 px-8 rounded-lg shadow transition-colors inline-flex items-center">
-                            Go to SLS Now <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
-                        </a>
-                    </div>
-                    
                     <div class="mt-8 text-center border-t pt-6">
-                        <p class="mb-4 text-gray-600 text-sm">Have you completed the game in SLS?</p>
                         <button onclick="markModuleComplete(7)" id="submit-m7" class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-2 px-6 rounded-lg shadow transition">
                             Mark as Completed
                         </button>
@@ -674,136 +399,140 @@
         </div>
     </main>
 
+    <!-- QUESTIONS PREVIEW MODAL -->
+    <div id="questions-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[85vh] flex flex-col shadow-2xl">
+            <div class="p-6 border-b flex justify-between items-center bg-slate-900 text-white rounded-t-2xl">
+                <h3 class="font-bold text-lg"><i class="fa-solid fa-list-check mr-2"></i>Master Assessment Questions Preview</h3>
+                <button onclick="closeQuestionsModal()" class="text-gray-400 hover:text-white text-xl p-1">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-6 flex-1 bg-slate-50" id="modal-questions-list">
+                <!-- Dynamically populated -->
+            </div>
+            <div class="p-4 border-t bg-white rounded-b-2xl text-right">
+                <button onclick="closeQuestionsModal()" class="bg-slate-800 hover:bg-slate-900 text-white font-medium px-6 py-2 rounded-lg text-sm">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script>
         // --- DATA: Quiz Questions ---
-        // Note: Keys m2, m3, m4, m5 correspond to the new module structure
         const moduleQuestions = {
-            m2: [ // Food Safety
-                {
-                    q: "What is the Temperature Danger Zone where bacteria multiply rapidly?",
-                    options: ["0°C to 4°C", "5°C to 60°C", "60°C to 100°C", "-18°C to 0°C"],
-                    ans: 1,
-                    exp: "Food should not be left in the 5°C to 60°C zone to prevent rapid bacterial growth."
-                },
-                {
-                    q: "When storing raw meat in the chiller, where should it be placed?",
-                    options: ["On the top shelf", "Next to cooked food", "On the bottom shelf", "In the vegetable crisper"],
-                    ans: 2,
-                    exp: "Raw meat must be on the bottom shelf below 5°C so its juices do not drip and contaminate other foods."
-                },
-                {
-                    q: "Which of the following is an example of Physical Contamination?",
-                    options: ["Bleach splashing into soup", "Bacteria from unwashed hands", "A strand of hair found in a sandwich", "Mould growing on bread"],
-                    ans: 2,
-                    exp: "Physical contamination involves foreign objects like hair, glass, or staples entering the food."
-                },
-                {
-                    q: "To prevent cuts in the kitchen, what is a crucial safety rule regarding knives?",
-                    options: ["Always place them in the wash basin to soak", "Never place them into the wash basin", "Store them loosely in a drawer", "Catch them if they fall"],
-                    ans: 1,
-                    exp: "Knives in soapy water are invisible hazards. Never put them in the sink basin to soak; wash them immediately."
-                }
+            m2: [
+                { q: "What is the Temperature Danger Zone where bacteria multiply rapidly?", options: ["0°C to 4°C", "5°C to 60°C", "60°C to 100°C", "-18°C to 0°C"], ans: 1, exp: "Food should not be left in the 5°C to 60°C zone." },
+                { q: "When storing raw meat in the chiller, where should it be placed?", options: ["On the top shelf", "Next to cooked food", "On the bottom shelf", "In the vegetable crisper"], ans: 2, exp: "Raw meat must be on the bottom shelf." },
+                { q: "Which of the following is an example of Physical Contamination?", options: ["Bleach splashing into soup", "Bacteria from unwashed hands", "A strand of hair found in a sandwich", "Mould growing on bread"], ans: 2, exp: "Foreign objects like hair cause physical contamination." },
+                { q: "To prevent cuts in the kitchen, what is a crucial safety rule regarding knives?", options: ["Always place them in the wash basin to soak", "Never place them into the wash basin", "Store them loosely in a drawer", "Catch them if they fall"], ans: 1, exp: "Never put knives in the sink basin to soak." }
             ],
-            m3: [ // Nutrition & Health
-                {
-                    q: "Based on My Healthy Plate, how much of your plate should consist of fruits and vegetables?",
-                    options: ["Quarter (1/4)", "Half (1/2)", "Three-quarters (3/4)", "The whole plate"],
-                    ans: 1,
-                    exp: "Half your plate should be fruits and vegetables to ensure adequate vitamins and minerals."
-                },
-                {
-                    q: "Which disease is primarily caused by a high intake of sodium (salt) over a long period?",
-                    options: ["Type 2 Diabetes", "Obesity", "Hypertension (High Blood Pressure)", "Scurvy"],
-                    ans: 2,
-                    exp: "High sodium intake is directly linked to an increased risk of Hypertension."
-                },
-                {
-                    q: "If your energy Input (food calories) is greater than your energy Output (physical activity), what happens?",
-                    options: ["Weight loss", "Weight gain", "Weight remains stable", "Immediate muscle growth"],
-                    ans: 1,
-                    exp: "Excess calories that are not burned off through activity are stored as fat, leading to weight gain."
-                },
-                {
-                    q: "Why are wholegrains (like brown rice) recommended to prevent Type 2 Diabetes?",
-                    options: ["They taste sweeter", "They release sugar slowly into the bloodstream", "They contain zero calories", "They are cheaper than white rice"],
-                    ans: 1,
-                    exp: "Wholegrains have a lower glycemic index, meaning they release sugar slowly, preventing blood sugar spikes."
-                }
+            m3: [
+                { q: "Based on My Healthy Plate, how much of your plate should consist of fruits and vegetables?", options: ["Quarter (1/4)", "Half (1/2)", "Three-quarters (3/4)", "The whole plate"], ans: 1, exp: "Half your plate should be fruits and vegetables." },
+                { q: "Which disease is primarily caused by a high intake of sodium (salt) over a long period?", options: ["Type 2 Diabetes", "Obesity", "Hypertension (High Blood Pressure)", "Scurvy"], ans: 2, exp: "High sodium intake is linked to Hypertension." },
+                { q: "If your energy Input (food calories) is greater than your energy Output (physical activity), what happens?", options: ["Weight loss", "Weight gain", "Weight remains stable", "Immediate muscle growth"], ans: 1, exp: "Excess calories are stored as fat." },
+                { q: "Why are wholegrains (like brown rice) recommended to prevent Type 2 Diabetes?", options: ["They taste sweeter", "They release sugar slowly into the bloodstream", "They contain zero calories", "They are cheaper than white rice"], ans: 1, exp: "They release sugar slowly into the bloodstream." }
             ],
-            m4: [ // Money Management
-                {
-                    q: "Which of the following is considered a 'Need'?",
-                    options: ["A branded pair of sneakers", "A new smartphone for gaming", "Clean drinking water", "A Netflix subscription"],
-                    ans: 2,
-                    exp: "Needs are essential for survival. Water is essential, while the others are desirable extras (Wants)."
-                },
-                {
-                    q: "According to the 50/30/20 rule, what does the 20% represent?",
-                    options: ["Wants", "Needs", "Savings", "Taxes"],
-                    ans: 2,
-                    exp: "The rule suggests 50% for Needs, 30% for Wants, and 20% for Savings."
-                },
-                {
-                    q: "Before buying an item, a discerning consumer asks '4 Decision Questions'. Which of these is ONE of them?",
-                    options: ["Will my friends like it?", "Can I find something cheaper?", "Is it currently trending on TikTok?", "Does it come in my favorite color?"],
-                    ans: 1,
-                    exp: "Comparing prices to find something cheaper is a key step in deciding if a purchase is wise."
-                },
-                {
-                    q: "What is a major risk of using a Credit Card irresponsibly?",
-                    options: ["Money is immediately deducted from your bank", "You might lose it like cash", "It is only accepted in a few stores", "High interest charges leading to debt"],
-                    ans: 3,
-                    exp: "Credit cards allow you to buy on credit, but failing to pay the bill on time incurs high interest charges."
-                }
+            m4: [
+                { q: "Which of the following is considered a 'Need'?", options: ["A branded pair of sneakers", "A new smartphone for gaming", "Clean drinking water", "A Netflix subscription"], ans: 2, exp: "Water is essential for survival." },
+                { q: "According to the 50/30/20 rule, what does the 20% represent?", options: ["Wants", "Needs", "Savings", "Taxes"], ans: 2, exp: "20% represents savings." },
+                { q: "Before buying an item, a discerning consumer asks '4 Decision Questions'. Which of these is ONE of them?", options: ["Will my friends like it?", "Can I find something cheaper?", "Is it currently trending on TikTok?", "Does it come in my favorite color?"], ans: 1, exp: "Comparing prices to find something cheaper." },
+                { q: "What is a major risk of using a Credit Card irresponsibly?", options: ["Money is immediately deducted from your bank", "You might lose it like cash", "It is only accepted in a few stores", "High interest charges leading to debt"], ans: 3, exp: "Failing to pay incurs high interest charges." }
             ],
-            m5: [ // Discerning Consumer
-                {
-                    q: "What is a disadvantage (Con) of Online Shopping?",
-                    options: ["Large variety of goods", "Can shop anytime (24/7)", "Easy to compare prices", "Delivery wait times and shipping fees"],
-                    ans: 3,
-                    exp: "While convenient, online shopping requires waiting for delivery and often paying extra for shipping."
-                },
-                {
-                    q: "Under the Lemon Law, which situation does NOT allow a consumer to seek redress (e.g., refund/exchange)?",
-                    options: ["The item is defective right out of the box", "The consumer simply changed their mind", "The item does not match the description", "The item breaks after normal use within a few days"],
-                    ans: 1,
-                    exp: "The Lemon Law protects against defects, not against a buyer simply changing their mind after purchase."
-                },
-                {
-                    q: "A consumer who researches a product, budgets, and avoids impulse buying is called a:",
-                    options: ["Reckless Consumer", "Discerning Consumer", "Passive Consumer", "Aggressive Consumer"],
-                    ans: 1,
-                    exp: "A discerning consumer shows good judgement and makes informed purchasing decisions."
-                },
-                {
-                    q: "Which Consumer Right ensures you are protected against products that are hazardous to health or life?",
-                    options: ["Right to Information", "Right to be Heard", "Right to Choose", "Right to Safety"],
-                    ans: 3,
-                    exp: "The Right to Safety protects consumers from dangerous products."
-                }
+            m5: [
+                { q: "What is a disadvantage (Con) of Online Shopping?", options: ["Large variety of goods", "Can shop anytime (24/7)", "Easy to compare prices", "Delivery wait times and shipping fees"], ans: 3, exp: "Delivery wait times and shipping fees." },
+                { q: "Under the Lemon Law, which situation does NOT allow a consumer to seek redress?", options: ["The item is defective right out of the box", "The consumer simply changed their mind", "The item does not match the description", "The item breaks after normal use within a few days"], ans: 1, exp: "The law does not cover change of mind." },
+                { q: "A consumer who researches a product, budgets, and avoids impulse buying is called a:", options: ["Reckless Consumer", "Discerning Consumer", "Passive Consumer", "Aggressive Consumer"], ans: 1, exp: "A discerning consumer shows good judgement." },
+                { q: "Which Consumer Right ensures you are protected against products that are hazardous to health or life?", options: ["Right to Information", "Right to be Heard", "Right to Choose", "Right to Safety"], ans: 3, exp: "The Right to Safety protects consumers." }
             ]
         };
 
-        // --- STATE MANAGEMENT ---
+        // Master Quiz Scenario Questions (12 questions total)
+        const scenarioQuestions = [
+            {
+                q: "Food Safety Scenario: Siti cuts raw chicken on a wooden board, then leaves it on the counter (30°C) for 3 hours before cooking. What hazard has occurred?",
+                options: ["Physical contamination from the wooden board", "Chemical contamination from the air", "Nothing is wrong as long as she boils the chicken later", "The chicken was left in the Temperature Danger Zone, allowing rapid bacterial growth"],
+                ans: 3,
+                exp: "Food left between 5°C and 60°C for more than 2 hours is in the Temperature Danger Zone."
+            },
+            {
+                q: "Food Safety Scenario: You have returned from the wet market in the morning and intend to cook fried chicken wings for dinner. Which is the MOST suitable refrigerator compartment to store the raw chicken wings?",
+                options: ["Freezer", "Vegetable Crisper", "Chiller", "At the side doors"],
+                ans: 2,
+                exp: "The chiller has a temperature ranging from 1 to 4 degree celsius which can prevent the growth of bacteria and the chicken wings do not require defrosting at night."
+            },
+            {
+                q: "Nutrition Scenario: John has a family history of Type 2 Diabetes. He usually orders white rice with fried chicken and sausages. How should he modify his meal using 'My Healthy Plate'?",
+                options: ["Keep the white rice but drink a sugary soda to balance the meal", "Eat only the fried chicken and skip the rice completely", "Change to brown rice, replace the sausage with vegetables, and choose steamed chicken", "Add another serving of fried meat for protein"],
+                ans: 2,
+                exp: "Switching to wholegrains helps slow down blood glucose level. Vegetables are high in vitamins, minerals and dietary fibre and low in calories while steamed chicken is low in fat."
+            },
+            {
+                q: "Nutrition Scenario: Priya consumes 2500 calories a day but spends her weekend playing video games on her bed. According to energy balance, what is likely to happen?",
+                options: ["Weight loss because her brain uses calories", "Weight remains stable", "Immediate muscle growth", "Weight gain because Energy Input is greater than Output"],
+                ans: 3,
+                exp: "Energy input exceeding output leads to weight gain."
+            },
+            {
+                q: "Nutrition Scenario: Ahmad's father has hypertension (high blood pressure). When preparing meals for him, which ingredient should Ahmad strictly limit?",
+                options: ["Wholemeal bread", "Soy sauce and preserved salted vegetables", "Fresh fruits", "Plain water"],
+                ans: 1,
+                exp: "Soy sauce and preserved foods contain very high amounts of sodium."
+            },
+            {
+                q: "Nutrition Scenario: Sarah is eating out at the hawker centre and wants to make a healthier choice. Which action aligns best with the Healthier Dining Programme (HDP)?",
+                options: ["Ordering a deep-fried dish because it's cooked in hot oil", "Choosing noodle soup instead of fried noodles and asking for less gravy", "Drinking a large bubble tea with 100% sugar", "Eating two portions of white rice to ensure she is full"],
+                ans: 1,
+                exp: "Soup-based dishes with less gravy lower fat and sodium intake."
+            },
+            {
+                q: "Money Management Scenario: Sarah receives $50 a week. She wants an $80 branded bag but needs to pay $25 a week for meals. Following the 50/30/20 rule, how should she handle this?",
+                options: ["Buy it immediately using her meal money", "Categorize it as a 'Want' and save her 'Wants' portion ($15/week) until she can afford it", "Put all her money into savings and skip meals", "Borrow money from a friend to buy it now"],
+                ans: 1,
+                exp: "Save her wants portion ($15/week) until she can afford it."
+            },
+            {
+                q: "Money Management Scenario: Tom wants a $150 jacket but only has $50. He uses a credit card to pay the rest, intending to pay it back 'someday'. What is the biggest danger?",
+                options: ["He might lose the physical card", "The card is only accepted online", "The money is immediately deducted from his bank", "High interest charges will accumulate, leading to a debt spiral"],
+                ans: 3,
+                exp: "High interest charges can lead to debt."
+            },
+            {
+                q: "Money Management Scenario: Wei Ting sees a trendy branded bag on sale and already has three similar bags at home. To be a discerning consumer, which question is the MOST appropriate for her to ask right now?",
+                options: ["Can I find something cheaper?", "Do I already have the item?", "Does my favorite celebrity own it?", "How can I get a higher credit limit?"],
+                ans: 1,
+                exp: "Asking if she already has the item prevents impulse buys."
+            },
+            {
+                q: "Consumer Scenario: David buys wireless earphones and discovers the right earbud is broken out of the box. The store manager says 'No refunds'. Under the Lemon Law, what are David's rights?",
+                options: ["He has the right to request a repair, replacement, or refund since it is a defective good", "He cannot do anything because he already left the store", "He must fix it himself or pay another shop", "He can only get a refund if he bought it online"],
+                ans: 0,
+                exp: "The Lemon Law protects against defective goods."
+            },
+            {
+                q: "Consumer Scenario: Lisa wants to buy a new laptop. She checks her budget, reads online reviews, and compares prices across three shops before purchasing. What term best describes Lisa?",
+                options: ["Passive Consumer", "Discerning Consumer", "Reckless Consumer", "Impulse Buyer"],
+                ans: 1,
+                exp: "A discerning consumer shows good judgement."
+            }
+        ];
+
         let userData = {
             progress: { m1: 0, m2: 0, m3: 0, m4: 0, m5: 0, m6: 0, m7: 0 },
-            scores: { m2: 0, m3: 0, m4: 0, m5: 0, m6: 0 }, // m1 and m7 don't have scores
+            scores: { m2: 0, m3: 0, m4: 0, m5: 0, m6: 0 },
             reflection: "",
             masterQuizReady: false
         };
 
-        let currentMasterQuiz = []; // Holds the 14 scenario questions
-        let masterQuizAnswers = [];
+        let currentMasterQuiz = [];
 
-        // Initialize App
         function initApp() {
-            // Load from local storage
             const savedData = localStorage.getItem('fceHubData_v2');
             if (savedData) {
                 userData = JSON.parse(savedData);
             }
 
-            // Setup Event Listeners
             document.getElementById('student-reflection').addEventListener('input', (e) => {
                 userData.reflection = e.target.value;
                 saveData();
@@ -811,31 +540,24 @@
 
             document.getElementById('mobile-menu-btn').addEventListener('click', toggleMobileMenu);
 
-            // Render UI
             updateNavUI();
             updateOverallProgress();
             
-            // Render Module Quizzes (now on m2, m3, m4, m5)
             renderModuleQuiz(2, 'm2');
             renderModuleQuiz(3, 'm3');
             renderModuleQuiz(4, 'm4');
             renderModuleQuiz(5, 'm5');
             
-            // Update completion buttons for non-quiz modules
             updateCompletionButtons();
-
-            // Set reflection text
             document.getElementById('student-reflection').value = userData.reflection || "";
 
-            // Check if Master Quiz (m6) should be shown as completed
             if (userData.progress.m6 === 100) {
                 document.getElementById('master-quiz-start').classList.add('hidden');
                 document.getElementById('summary-section').classList.remove('hidden');
                 document.getElementById('score-badge-6').classList.remove('hidden');
-                document.getElementById('score-badge-6').innerText = `Score: ${userData.scores.m6}/14`;
+                document.getElementById('score-badge-6').innerText = `Score: ${userData.scores.m6}/12`;
             }
 
-            // Default route
             switchModule(1);
         }
 
@@ -853,32 +575,24 @@
         }
 
         function toggleMobileMenu() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('-translate-x-full');
+            document.getElementById('sidebar').classList.toggle('-translate-x-full');
         }
 
-        // Navigation Logic
         function switchModule(modId) {
-            // Hide all modules
             document.querySelectorAll('.module-content').forEach(el => el.classList.add('hidden'));
-            // Remove active states from nav
             document.querySelectorAll('#nav-links button').forEach(el => {
                 el.classList.remove('bg-gray-100', 'border-l-4');
-                // Remove specific module border colors
                 for(let i=1; i<=7; i++) el.classList.remove(`border-m${i}-500`);
             });
 
-            // Show selected module
             const targetMod = document.getElementById(`module-${modId}`);
             if (targetMod) targetMod.classList.remove('hidden');
             
-            // Add active state to nav button
             const navBtn = document.getElementById(`nav-m${modId}`);
             if (navBtn) {
                 navBtn.classList.add('bg-gray-100', 'border-l-4', `border-m${modId}-500`);
             }
 
-            // Specific logic for Module 6 (Exit Ticket)
             if (modId === 6) {
                 const requiredProgress = (userData.progress.m1 + userData.progress.m2 + userData.progress.m3 + userData.progress.m4 + userData.progress.m5) / 5;
                 if (requiredProgress < 100) {
@@ -888,7 +602,6 @@
                 }
             }
 
-            // Close mobile menu if open
             if (window.innerWidth < 768) {
                 document.getElementById('sidebar').classList.add('-translate-x-full');
             }
@@ -903,12 +616,11 @@
                     checkIcon.classList.add('hidden');
                 }
 
-                // Update score badges if completed (only for modules with scores)
                 if ([2, 3, 4, 5, 6].includes(i) && userData.progress[`m${i}`] === 100) {
                     const badge = document.getElementById(`score-badge-${i}`);
                     if (badge) {
                         badge.classList.remove('hidden');
-                        const totalQs = i === 6 ? 14 : moduleQuestions[`m${i}`].length;
+                        const totalQs = i === 6 ? 12 : moduleQuestions[`m${i}`].length;
                         badge.innerText = `Score: ${userData.scores[`m${i}`]}/${totalQs}`;
                     }
                 }
@@ -917,7 +629,6 @@
 
         function updateOverallProgress() {
             let total = 0;
-            // Only count core modules 1-6 for overall progress, m7 is bonus
             const coreModules = ['m1', 'm2', 'm3', 'm4', 'm5', 'm6'];
             for (const key of coreModules) {
                 total += userData.progress[key];
@@ -931,7 +642,6 @@
             }
         }
         
-        // Manual complete for non-quiz modules (1 and 7)
         function markModuleComplete(modId) {
             userData.progress[`m${modId}`] = 100;
             saveData();
@@ -952,14 +662,12 @@
                     const btn = document.getElementById(`submit-m${id}`);
                     if(btn) {
                         btn.innerText = "Completed!";
-                        // Reset classes and apply green styling
                         btn.className = "font-bold py-2 px-6 rounded-lg shadow transition bg-green-500 hover:bg-green-600 text-white";
                     }
                 }
             });
         }
 
-        // --- QUIZ ENGINE ---
         function renderModuleQuiz(modNum, modKey) {
             const container = document.getElementById(`quiz-container-${modNum}`);
             if (!container) return;
@@ -967,7 +675,6 @@
             const questions = moduleQuestions[modKey];
             let html = '';
 
-            // If already completed, show summary instead of quiz, or allow retry
             if (userData.progress[modKey] === 100) {
                 html = `
                     <div class="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
@@ -987,7 +694,6 @@
                         <p class="font-bold text-gray-800 mb-3"><span class="text-gray-400 mr-2">${index + 1}.</span> ${q.q}</p>
                         <div class="space-y-2">
                 `;
-                
                 q.options.forEach((opt, optIndex) => {
                     html += `
                         <button onclick="handleAnswer('${modKey}', ${index}, ${optIndex})" 
@@ -998,15 +704,9 @@
                         </button>
                     `;
                 });
-
-                html += `
-                        </div>
-                        <div id="feedback-${modKey}-${index}" class="mt-4 p-3 rounded-lg text-sm hidden"></div>
-                    </div>
-                `;
+                html += `</div><div id="feedback-${modKey}-${index}" class="mt-4 p-3 rounded-lg text-sm hidden"></div></div>`;
             });
 
-            // Submit Button
             html += `
                 <div class="text-right mt-6">
                     <button onclick="submitModuleQuiz('${modKey}', ${modNum})" id="submit-${modKey}" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow transition opacity-50 cursor-not-allowed" disabled>
@@ -1014,38 +714,27 @@
                     </button>
                 </div>
             `;
-
             container.innerHTML = html;
-            
-            // Initialize state for this quiz instance
-            window[`quizState_${modKey}`] = {
-                answers: new Array(questions.length).fill(null),
-                scored: false
-            };
+            window[`quizState_${modKey}`] = { answers: new Array(questions.length).fill(null), scored: false };
         }
 
         function handleAnswer(modKey, qIndex, optIndex) {
             const state = window[`quizState_${modKey}`];
-            if (state.scored) return; // Prevent changing answers after submission
+            if (state.scored) return;
 
             state.answers[qIndex] = optIndex;
+            const q = moduleQuestions[modKey];
             
-            // Reset styles for this question's buttons
-            const q = moduleQuestions[modKey] || currentMasterQuiz;
-            const optionsCount = q[qIndex].options.length;
-            
-            for (let i = 0; i < optionsCount; i++) {
+            for (let i = 0; i < q[qIndex].options.length; i++) {
                 const btn = document.getElementById(`btn-${modKey}-${qIndex}-${i}`);
                 btn.classList.remove('bg-blue-50', 'border-blue-400', 'ring-2', 'ring-blue-200');
                 btn.classList.add('border-gray-200');
             }
 
-            // Highlight selected
             const selectedBtn = document.getElementById(`btn-${modKey}-${qIndex}-${optIndex}`);
             selectedBtn.classList.remove('border-gray-200');
             selectedBtn.classList.add('bg-blue-50', 'border-blue-400', 'ring-2', 'ring-blue-200');
 
-            // Check if all answered to enable submit
             if (!state.answers.includes(null)) {
                 const submitBtn = document.getElementById(`submit-${modKey}`);
                 submitBtn.disabled = false;
@@ -1066,9 +755,8 @@
                 const userAns = state.answers[index];
                 const isCorrect = userAns === q.ans;
                 const feedbackDiv = document.getElementById(`feedback-${modKey}-${index}`);
-                
-                // Style selected button based on correctness
                 const selectedBtn = document.getElementById(`btn-${modKey}-${index}-${userAns}`);
+                
                 selectedBtn.classList.remove('bg-blue-50', 'border-blue-400', 'ring-2', 'ring-blue-200');
                 
                 if (isCorrect) {
@@ -1081,7 +769,6 @@
                     selectedBtn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
                     document.getElementById(`icon-${modKey}-${index}-${userAns}`).className = "fa-solid fa-xmark text-red-600";
                     
-                    // Highlight correct answer
                     const correctBtn = document.getElementById(`btn-${modKey}-${index}-${q.ans}`);
                     correctBtn.classList.remove('border-gray-200');
                     correctBtn.classList.add('bg-green-50', 'border-green-500', 'border-dashed');
@@ -1091,151 +778,31 @@
                     feedbackDiv.innerHTML = `<strong>Incorrect.</strong> ${q.exp}`;
                 }
                 
-                // Disable all buttons
                 for (let i = 0; i < q.options.length; i++) {
                     document.getElementById(`btn-${modKey}-${index}-${i}`).disabled = true;
                 }
-                
                 feedbackDiv.classList.remove('hidden');
             });
 
-            // Update Progress & Score
             userData.progress[modKey] = 100;
-            if (score > userData.scores[modKey]) {
-                userData.scores[modKey] = score;
-            }
+            if (score > userData.scores[modKey]) userData.scores[modKey] = score;
             saveData();
 
-            // Transform submit button to Next button
             const submitBtn = document.getElementById(`submit-${modKey}`);
             submitBtn.innerText = "Module Completed! Continue";
-            submitBtn.onclick = () => {
-                // If it's not the exit ticket, go to next
-                if (modNum < 6) switchModule(modNum + 1);
-            };
+            submitBtn.onclick = () => { if (modNum < 6) switchModule(modNum + 1); };
         }
 
         function resetModuleQuiz(modKey, modNum) {
-            // Temporary set progress back to allow retake visually, but keep score
-            renderModuleQuiz(modNum, modKey, true); 
-            // We need a specific render for retake that ignores the 100% check temporarily
-            forceRenderQuiz(modNum, modKey);
+            renderModuleQuiz(modNum, modKey);
         }
 
-        function forceRenderQuiz(modNum, modKey) {
-             const container = document.getElementById(`quiz-container-${modNum}`);
-             const questions = moduleQuestions[modKey];
-             let html = '';
-             questions.forEach((q, index) => {
-                html += `<div class="quiz-card bg-white border border-gray-200 rounded-xl p-5 shadow-sm mb-6" id="q-container-${modKey}-${index}">
-                            <p class="font-bold text-gray-800 mb-3"><span class="text-gray-400 mr-2">${index + 1}.</span> ${q.q}</p>
-                            <div class="space-y-2">`;
-                q.options.forEach((opt, optIndex) => {
-                    html += `<button onclick="handleAnswer('${modKey}', ${index}, ${optIndex})" id="btn-${modKey}-${index}-${optIndex}" class="w-full text-left p-3 rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors text-sm text-gray-700 flex justify-between items-center"><span>${opt}</span><i id="icon-${modKey}-${index}-${optIndex}" class="fa-solid hidden"></i></button>`;
-                });
-                html += `</div><div id="feedback-${modKey}-${index}" class="mt-4 p-3 rounded-lg text-sm hidden"></div></div>`;
-            });
-            html += `<div class="text-right mt-6"><button onclick="submitModuleQuiz('${modKey}', ${modNum})" id="submit-${modKey}" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow transition opacity-50 cursor-not-allowed" disabled>Submit Answers</button></div>`;
-            container.innerHTML = html;
-            window[`quizState_${modKey}`] = { answers: new Array(questions.length).fill(null), scored: false };
-        }
-
-        // --- MASTER QUIZ (MODULE 6) ---
         function startMasterQuiz() {
             document.getElementById('master-quiz-start').classList.add('hidden');
             const container = document.getElementById('quiz-container-6');
             container.classList.remove('hidden');
 
-            // Define 14 real-world scenario questions covering all modules
-            const scenarioQuestions = [
-                {
-                    q: "Food Safety Scenario: Siti cuts raw chicken on a wooden board, then leaves it on the counter (30°C) for 3 hours before cooking. What hazard has occurred?",
-                    options: ["Physical contamination from the wooden board", "Chemical contamination from the air", "Nothing is wrong as long as she boils the chicken later", "The chicken was left in the Temperature Danger Zone, allowing rapid bacterial growth"],
-                    ans: 3,
-                    exp: "Food left between 5°C and 60°C for more than 2 hours is in the Temperature Danger Zone and becomes unsafe due to microbial growth."
-                },
-                {
-                    q: "Food Safety Scenario: You are storing groceries in the refrigerator. Where MUST you place a packet of raw chicken wings?",
-                    options: ["Top shelf next to cooked food", "In the vegetable crisper", "On the bottom shelf below 5°C to prevent juices dripping", "Left on the counter if you plan to cook it tomorrow"],
-                    ans: 2,
-                    exp: "Raw meat must always be stored on the bottom shelf of the chiller to prevent contaminated juices from dripping onto ready-to-eat foods."
-                },
-                {
-                    q: "Food Safety Scenario: While frying fish in the FCE kitchen, splashing oil causes a small fire in the pan. What is a serious safety VIOLATION in this situation?",
-                    options: ["Using a timer", "Throwing paper towels onto the pan to smother it", "Turning off the gas stove", "Ensuring utensils were dry beforehand"],
-                    ans: 1,
-                    exp: "Paper towels are highly flammable and will make the fire worse. You should never use flammable materials near open flames."
-                },
-                {
-                    q: "Food Safety Scenario: A student is rushing to clean up after an FCE practical and throws a sharp, dirty chopping knife directly into a sink filled with opaque soapy water. Why is this a major kitchen hazard?",
-                    options: ["It causes chemical contamination", "The knife will rust immediately", "The knife is hidden and can cause severe cuts to anyone washing dishes", "It violates the Temperature Danger Zone rule"],
-                    ans: 2,
-                    exp: "Knives should never be placed in a wash basin filled with water, as they become invisible hazards that can cause deep cuts."
-                },
-                {
-                    q: "Nutrition Scenario: John has a family history of Type 2 Diabetes. He usually orders white rice with fried chicken and sausages. How should he modify his meal using 'My Healthy Plate'?",
-                    options: ["Keep the white rice but drink a sugary soda to balance the meal", "Eat only the fried chicken and skip the rice completely", "Change to brown rice, replace the sausage with vegetables, and choose steamed chicken", "Add another serving of fried meat for protein"],
-                    ans: 2,
-                    exp: "Switching to wholegrains (brown rice), adding vegetables (half plate), and choosing healthier cooking methods (steamed) helps prevent diabetes and obesity."
-                },
-                {
-                    q: "Nutrition Scenario: Priya consumes 2500 calories a day but spends her entire weekend playing video games on her bed. According to the principle of energy balance, what is likely to happen?",
-                    options: ["Weight loss because her brain uses calories", "Weight remains stable", "Immediate muscle growth", "Weight gain because Energy Input is greater than Output"],
-                    ans: 3,
-                    exp: "When energy input (food) exceeds energy output (physical activity), the excess calories are stored as fat, leading to weight gain."
-                },
-                {
-                    q: "Nutrition Scenario: Ahmad's father has hypertension (high blood pressure). When preparing meals for him, which ingredient should Ahmad strictly limit?",
-                    options: ["Wholemeal bread", "Soy sauce and preserved salted vegetables", "Fresh fruits", "Plain water"],
-                    ans: 1,
-                    exp: "High sodium (salt) intake is a primary cause of hypertension. Soy sauce and preserved foods contain very high amounts of sodium."
-                },
-                {
-                    q: "Nutrition Scenario: Sarah is eating out at the hawker centre and wants to make a healthier choice. Which of these actions aligns best with the Healthier Dining Programme (HDP)?",
-                    options: ["Ordering a deep-fried dish because it's cooked in hot oil", "Choosing noodle soup instead of fried noodles and asking for less gravy", "Drinking a large bubble tea with 100% sugar", "Eating two portions of white rice to ensure she is full"],
-                    ans: 1,
-                    exp: "Choosing soup-based dishes over fried ones and reducing gravy intake lowers fat and sodium consumption."
-                },
-                {
-                    q: "Money Management Scenario: Sarah receives $50 a week. She wants an $80 branded bag but needs to pay $25 a week for meals. Following the 50/30/20 rule, how should she handle this?",
-                    options: ["Buy it immediately using her meal money", "Categorize it as a 'Want' and save her 'Wants' portion ($15/week) until she can afford it", "Put all her money into savings and skip meals", "Borrow money from a friend to buy it now"],
-                    ans: 1,
-                    exp: "A branded bag is a 'Want'. Based on 50/30/20, she should budget 30% ($15) for wants and save it up over time."
-                },
-                {
-                    q: "Money Management Scenario: Tom wants a $150 jacket but only has $50. He uses a credit card to pay the rest, intending to pay it back 'someday'. What is the biggest danger of this decision?",
-                    options: ["He might lose the physical card", "The card is only accepted online", "The money is immediately deducted from his bank", "High interest charges will accumulate, leading to a debt spiral"],
-                    ans: 3,
-                    exp: "Credit cards charge high interest on unpaid balances, which can quickly lead to uncontrollable debt if not paid on time."
-                },
-                {
-                    q: "Money Management Scenario: Wei Ting sees a trendy branded bag on sale. She already has three similar bags at home. To be a discerning consumer, which of the '4 Decision Questions' is the MOST appropriate for her to ask right now?",
-                    options: ["Can I find something cheaper?", "Do I already have the item?", "Does my favorite celebrity own it?", "How can I get a higher credit limit?"],
-                    ans: 1,
-                    exp: "Asking 'Do I already have the item?' prevents unnecessary impulse purchases of things she doesn't actually need."
-                },
-                {
-                    q: "Consumer Scenario: David buys a new pair of wireless earphones. The next day, he discovers the right earbud is broken out of the box. The store manager says 'No refunds'. Under the Lemon Law, what are David's rights?",
-                    options: ["He has the right to request a repair, replacement, or refund since it is a defective good", "He cannot do anything because he already left the store", "He must fix it himself or pay another shop", "He can only get a refund if he bought it online"],
-                    ans: 0,
-                    exp: "The Lemon Law protects consumers against defective goods within 6 months of purchase, overriding 'no refund' store policies for broken items."
-                },
-                {
-                    q: "Consumer Scenario: Lisa wants to buy a new laptop. She checks her budget, reads online reviews, and compares prices across three shops before making a decision. What term best describes Lisa?",
-                    options: ["Passive Consumer", "Discerning Consumer", "Reckless Consumer", "Impulse Buyer"],
-                    ans: 1,
-                    exp: "A discerning consumer shows good judgement by researching, budgeting, and comparing prices before purchasing."
-                },
-                {
-                    q: "Consumer Scenario: Ryan bought a pair of shoes online. When they arrived, he realized he didn't like the color in person, even though they had no defects. He demands a refund under the Lemon Law. Is he entitled to it?",
-                    options: ["Yes, because online purchases are fully protected", "Yes, the Lemon Law covers all refunds", "No, the Lemon Law does not cover 'change of mind'", "No, he must exchange it for a more expensive item"],
-                    ans: 2,
-                    exp: "The Lemon Law only covers defective goods. It does not apply if a consumer simply changes their mind or doesn't like the item."
-                }
-            ];
-
-            // Shuffle the 14 scenario questions
-            currentMasterQuiz = scenarioQuestions.sort(() => 0.5 - Math.random());
+            currentMasterQuiz = [...scenarioQuestions].sort(() => 0.5 - Math.random());
             
             let html = '';
             currentMasterQuiz.forEach((q, index) => {
@@ -1264,9 +831,8 @@
                     </button>
                 </div>
             `;
-
             container.innerHTML = html;
-            window[`quizState_m6`] = { answers: new Array(14).fill(null), scored: false };
+            window[`quizState_m6`] = { answers: new Array(12).fill(null), scored: false };
         }
 
         function handleMasterAnswer(qIndex, optIndex) {
@@ -1329,41 +895,56 @@
             userData.scores.m6 = score;
             saveData();
 
-            // Hide submit button, show summary
             document.getElementById('submit-m6').classList.add('hidden');
-            
             const badge = document.getElementById('score-badge-6');
             badge.classList.remove('hidden');
-            badge.innerText = `Score: ${score}/14`;
-            
+            badge.innerText = `Score: ${score}/12`;
             document.getElementById('summary-section').classList.remove('hidden');
+        }
+
+        // --- QUESTIONS PREVIEW MODAL ---
+        function openQuestionsModal() {
+            const modal = document.getElementById('questions-modal');
+            const listContainer = document.getElementById('modal-questions-list');
             
-            // Scroll to summary
-            setTimeout(() => {
-                document.getElementById('summary-section').scrollIntoView({ behavior: 'smooth' });
-            }, 500);
+            let html = '<p class="text-xs text-gray-500 mb-2">Below are all 12 current master assessment questions with correct answers highlighted in green:</p>';
+            
+            scenarioQuestions.forEach((q, idx) => {
+                html += `
+                    <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+                        <p class="font-bold text-slate-800 text-sm mb-2"><span class="text-slate-400 mr-2">Q${idx + 1}.</span> ${q.q}</p>
+                        <ul class="space-y-1 pl-4 text-xs">
+                `;
+                q.options.forEach((opt, optIdx) => {
+                    const isCorrect = optIdx === q.ans;
+                    const style = isCorrect ? 'bg-green-50 text-green-800 font-semibold border border-green-300 p-2 rounded' : 'text-gray-600 p-1';
+                    html += `<li class="${style}">• ${opt} ${isCorrect ? '<i class="fa-solid fa-check text-green-600 ml-2"></i> (Correct Answer)' : ''}</li>`;
+                });
+                html += `</ul><p class="text-xs text-gray-500 mt-2 italic"><strong>Explanation:</strong> ${q.exp}</p></div>`;
+            });
+            
+            listContainer.innerHTML = html;
+            modal.classList.remove('hidden');
+        }
+
+        function closeQuestionsModal() {
+            document.getElementById('questions-modal').classList.add('hidden');
         }
 
         function preparePrint() {
-            // Populate print summary data
             const scoreHtml = `
                 <li><strong>Module 2 (Food Safety):</strong> ${userData.scores.m2} / ${moduleQuestions.m2.length}</li>
                 <li><strong>Module 3 (Nutrition):</strong> ${userData.scores.m3} / ${moduleQuestions.m3.length}</li>
                 <li><strong>Module 4 (Money Management):</strong> ${userData.scores.m4} / ${moduleQuestions.m4.length}</li>
                 <li><strong>Module 5 (Consumer):</strong> ${userData.scores.m5} / ${moduleQuestions.m5.length}</li>
-                <li class="mt-2 text-lg"><strong>Master Quiz:</strong> ${userData.scores.m6} / 14</li>
+                <li class="mt-2 text-lg"><strong>Master Quiz:</strong> ${userData.scores.m6} / 12</li>
             `;
             document.getElementById('print-scores').innerHTML = scoreHtml;
-            
-            const refText = document.getElementById('student-reflection').value;
-            document.getElementById('print-reflection').innerText = refText || "No reflection provided.";
-
+            document.getElementById('print-reflection').innerText = userData.reflection || "No reflection provided.";
             window.print();
         }
 
-        // Run initialization on load
         window.onload = initApp;
-
     </script>
 </body>
 </html>
